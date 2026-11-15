@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "9was9"
+version = "0.2.0"
+description = "Универсальный ускоритель numpy-вычислений: KV-кэш, RoPE, fused linear, fast softmax, GQA-совместимый attention, обработка изображений."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [{ name = "CharmLxt", email = "reception.mailspypi@gmail.com" }]
+keywords = [
+    "numpy", "acceleration", "kv-cache", "rope",
+    "fused-linear", "attention", "gqa", "mqa", "softmax",
+    "llm", "inference", "transformer", "image-processing", "resize"
+]
+dependencies = [
+    "numpy>=1.21.0"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/CharmLxt/9was9"
+Source = "https://github.com/CharmLxt/9was9"
+Tracker = "https://github.com/CharmLxt/9was9/issues"
+
+[tool.setuptools.packages.find]
+include = ["ninewas9*"]
